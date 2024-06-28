@@ -1,0 +1,16 @@
+{% extends 'template_base.html' %}
+
+{% block content%}
+<form action="" method="post">
+    <label for="">Producto</label>
+    <input type="text" name="producto" required>
+
+    <label for="">Tipo</label>
+    <input type="text" name="tipo" required>
+
+    <label for="">Precio</label>
+    <input type="number" name="precio" required>
+
+    <button type="submit">Agregar</button>
+</form>
+{% endblock%}

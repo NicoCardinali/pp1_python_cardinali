@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Club Atlético River Plate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Club Atlético River Plate</h1>
+    </header>
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/productos">Productos</a>
+    </nav>
+    <div class="content">
+        <h2>Bienvenidos al sitio oficial</h2>
+        <p>Bienvenidos a la página oficial del Club Atlético River Plate. Aquí encontrarás toda la información sobre nuestro querido club, incluyendo noticias, historia, y formas de contacto.</p>
+    </div>
+
+    <div>
+        {% block content %}
+
+        <table class="table">
+  
+            {% block tabla %}
+            {% endblock %}
+    
+        </table>
+  
+          {% endblock %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Club Atlético River Plate</p>
+    </footer>
+</body>
+</html>

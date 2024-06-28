@@ -1,0 +1,21 @@
+{%  extends 'template_base.html' %}
+
+{%  block tabla %}
+    <tr>
+        <th>Productos</th>
+        <th>Tipo</th>
+        <th>Precio</th>
+        <th><a href="/add_producto">Agregar Producto</a></th>
+
+        
+    </tr>
+
+    {% for producto in listado %}
+        <tr>
+            <td>{{producto.producto}}</td>
+            <td>{{producto.tipo}}</td>
+            <td>{{producto.precio}}</td>
+
+        </tr>
+    {% endfor %}
+{% endblock %}
